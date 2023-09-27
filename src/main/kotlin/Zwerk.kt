@@ -50,7 +50,7 @@ class Zwerg (var name: String= "Gimli",
         val schaden = lebensRaub.schaden.random()
         boss.hp -= schaden
         zwerg.hp += schaden
-        println("${zwerg.name} hat wieder ${zwerg.hp} Lebenspunkte")
+
         if (zwerg.hp >= hp){
             zwerg.hp = hp
         }
@@ -58,6 +58,34 @@ class Zwerg (var name: String= "Gimli",
         println("${boss.name} hat noch ${boss.hp} Lebenspunkte!")
         if (boss.hp <= 0){
             println("${boss.name} wurde besiegt...hurrah !")
+        }
+        println("${zwerg.name} hat wieder ${zwerg.hp} Lebenspunkte")
+    }
+
+    fun kampfMenuZwerg(zwerg: Zwerg,boss: Boss,bosshelfer: Bosshelfer){
+        println("Mit welcher Attacke soll ${zwerg.name} angreifen?")
+        println("""
+            1 -> Normaler Angriff
+            2 -> Blutung zufügen
+            3 -> Schwerer Angriff
+            4 -> Lebens Raub
+        """.trimIndent())
+
+        val eingabe: String = readln()
+
+        when(eingabe){
+            "1" -> {
+                normalerAngriffZwerg(boss)
+                }
+            "2" -> {
+                blutungZwerg(boss)
+                }
+            "3" -> {
+                schwererAngriffZwerg(boss)
+                }
+            "4" -> {
+                lebensRaubZwerg(zwerg, boss)
+                }
         }
     }
 

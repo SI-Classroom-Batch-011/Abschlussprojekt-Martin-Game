@@ -14,7 +14,7 @@ open class angriffe(var name: String,
     //"Alle heilen","Normaler Angriff","Selbst heilen","Alle schilden für 3 Runden"
     var alleHeilen: angriffe= angriffe("Alle Heilen",0..0,200,0)
     var angriffBarde: angriffe= angriffe("Normaler Angriff",8..15,0,0)
-    var selbstHeilung2: angriffe= angriffe("Selbst Heilen",0..0,150,0)
+    var selbstHeilungBarde: angriffe= angriffe("Selbst Heilen",0..0,150,0)
     var alleSchilden: angriffe= angriffe("Alle Schilden",0..0,0,80)
 
     //Angriffe Zwerg
@@ -37,5 +37,5 @@ open class angriffe(var name: String,
     //"Gift Biss","Gift Spritze (AOE)","Schrei","Kopfnuss"
     var giftBiss:angriffe= angriffe("Gift Biss",30..40,0,0)
     var giftSpritze:angriffe =angriffe("Gift Spritze",15..25,0,0)
-    var schrei:angriffe= angriffe("Schrei",0..0,0,0)
+    var schrei:angriffe= angriffe("Schrei",0..0,0,90)
     var kopfNuss:angriffe= angriffe("Kopfnuss",30..40,0,0)

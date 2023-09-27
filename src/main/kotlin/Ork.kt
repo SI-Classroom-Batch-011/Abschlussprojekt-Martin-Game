@@ -9,16 +9,6 @@ class Ork(var name: String = "Durotan",
     }
 
 
-    fun angriffe(){
-        println("Welchen Angriff soll ich für dich ausführen mein Meister?")
-        println("""
-            1 für Normaler Angriff
-            2 für Angriff Block
-            3 für Selbst Heilung
-            4 für Schild
-        """.trimIndent())
-    }
-
 
     fun normalerAngriffOrk(boss: Boss){
         val schaden = schaden.random()
@@ -62,6 +52,33 @@ class Ork(var name: String = "Durotan",
         }
         if (boss.hp <= 0){
             println("${boss.name} wurde besiegt...hurrah !")
+        }
+    }
+
+    fun kampfMenuOrk(ork: Ork,boss: Boss){
+        println("Mit welcher Attacke soll ${ork.name} angreifen?")
+        println("""
+            1 -> Normaler Angriff
+            2 -> Angriff Block
+            3 -> Selbst Heilung
+            4 -> Schildstoß
+        """.trimIndent())
+
+        val eingabe: String = readln()
+
+        when(eingabe){
+            "1" -> {
+                normalerAngriffOrk(boss)
+                }
+            "2" -> {
+                blocken(ork, boss)
+                }
+            "3" -> {
+                selbstHeilen(ork)
+                }
+            "4" -> {
+                schildStoß(boss)
+                }
         }
     }
 

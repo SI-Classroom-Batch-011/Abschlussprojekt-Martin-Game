@@ -37,24 +37,26 @@ fun main() {
     println("-------------------------------")
 
 
+    zwerg.kampfMenuZwerg(zwerg, boss,bossHelfer)
+    ork.kampfMenuOrk(ork, boss)
+    barde.kampfMenuBarde(ork, zwerg, barde, boss)
+    boss.kampfMenuBoss(ork, zwerg, barde, boss)
 
-    ork.normalerAngriffOrk(boss)
-    Thread.sleep(2500)
-    zwerg.normalerAngriffZwerg(boss)
-    Thread.sleep(2500)
-    boss.angreifen(ork)
-    Thread.sleep(2500)
-    ork.selbstHeilen(ork)
-    Thread.sleep(2500)
-    boss.angreifen(ork)
-    Thread.sleep(2500)
-    ork.blocken(ork,boss)
-    Thread.sleep(2500)
-    ork.schildStoß(boss)
-    Thread.sleep(2500)
-    zwerg.blutungZwerg(boss)
-    Thread.sleep(2500)
-    zwerg.schwererAngriffZwerg(boss)
-    Thread.sleep(2500)
-    zwerg.lebensRaubZwerg(zwerg,boss)
+
+    fun kampf(ork: Ork,zwerg: Zwerg,barde: Barde,boss: Boss,bosshelfer: Bosshelfer){
+        while (boss.hp >= 0) {
+            if (boss.hp <= boss.hp /2){
+                println("${bosshelfer.name} wurde gerufen!!!")
+                while (bossHelfer.hp > 0){
+                    zwerg.kampfMenuZwerg(zwerg, bosshelfer)
+                    ork.kampfMenuOrk(ork, bosshelfer)
+                    barde.kampfMenuBarde(ork, zwerg, barde, boss,bosshelfer)
+                    boss.kampfMenuBoss(ork, zwerg, barde, boss,bosshelfer)
+                }
+            }
+        }
+
+    }
+
+
 }
