@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a727fb7-267d-4bc7-a700-a3ffca945337" name="Changes" comment="Abschluss Projekt Martin">
+    <list default="true" id="5a727fb7-267d-4bc7-a700-a3ffca945337" name="Changes" comment="Abschluss Projekt Martin update">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/gegner/Gegner.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/helden/Helden.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/helden/Zwerg.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Barde.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Barde.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Boss.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Boss.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bosshelfer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bosshelfer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Ork.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Ork.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Zwerk.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Zwerk.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Barde.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/helden/Barde.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Inventar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Inventar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Ork.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/helden/Ork.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Zwerk.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/angriffe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/angriffe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
+    </list>
+    <list id="84e2031c-bc7e-4936-95b2-bdc56443eef3" name="Changes by lauraneubauer" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Boss.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gegner/Boss.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Bosshelfer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/gegner/Bosshelfer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/test.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +39,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/kotlin/test.kt">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="50" changelist="84e2031c-bc7e-4936-95b2-bdc56443eef3" />
+        <range start1="1" end1="37" start2="51" end2="54" changelist="5a727fb7-267d-4bc7-a700-a3ffca945337" />
+        <range start1="39" end1="54" start2="56" end2="71" changelist="5a727fb7-267d-4bc7-a700-a3ffca945337" />
+        <range start1="56" end1="56" start2="73" end2="76" changelist="5a727fb7-267d-4bc7-a700-a3ffca945337" />
+        <range start1="62" end1="62" start2="82" end2="83" changelist="84e2031c-bc7e-4936-95b2-bdc56443eef3" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -40,13 +59,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/Helden" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="Helden" />
+      <recent name="Gegner" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Abschlussprojekt-Martin" />
@@ -79,11 +108,44 @@
       <option name="project" value="LOCAL" />
       <updated>1695391905882</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Abschluss Projekt Martin update">
+      <option name="closed" value="true" />
+      <created>1695804776610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695804776610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Abschluss Projekt Martin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Abschluss Projekt Martin" />
+    <MESSAGE value="Abschluss Projekt Martin update 2" />
+    <MESSAGE value="Martin Abschlussprojekt game" />
+    <MESSAGE value="Abschluss Projekt Martin update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abschluss Projekt Martin update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/gegner/Gegner.kt</url>
+          <line>178</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
